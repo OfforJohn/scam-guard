@@ -86,6 +86,28 @@ document.addEventListener('DOMContentLoaded', function() {
             panel.classList.toggle('open');
         });
     });
+
+    // Footer Accordion Functionality
+    const footerAccordionHeaders = document.querySelectorAll('.footer-accordion-header');
+
+    footerAccordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const panel = this.nextElementSibling;
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+            // Close all other footer panels
+            footerAccordionHeaders.forEach(otherHeader => {
+                if (otherHeader !== header) {
+                    otherHeader.setAttribute('aria-expanded', 'false');
+                    otherHeader.nextElementSibling.classList.remove('open');
+                }
+            });
+
+            // Toggle current panel
+            this.setAttribute('aria-expanded', !isExpanded);
+            panel.classList.toggle('open');
+        });
+    });
 });
 
 // Smooth scroll for anchor links
