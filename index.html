@@ -57,7 +57,7 @@
             </div>
         </div>
         <div class="category-navigation">
-            <button class="category-arrow left" aria-label="Previous categories">
+            <button type="button" class="category-arrow left" aria-label="Previous categories">
                 <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 4L6 10L12 16" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -75,7 +75,7 @@
                     <div class="category">Device Protection</div>
                 </div>
             </div>
-            <button class="category-arrow right" aria-label="Next categories">
+            <button type="button" class="category-arrow right" aria-label="Next categories">
                 <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8 4L14 10L8 16" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -170,7 +170,7 @@
             </div>
 
             <!-- Promo 2 -->
-            <div class="large-promo__item">
+            <div class="large-promo__item large-promo__item--reverse">
                 <div class="container">
                     <div class="large-promo__content">
                         <div class="large-promo__image">
@@ -185,17 +185,17 @@
             </div>
 
             <!-- Promo 3 -->
-            <div class="large-promo__item">
+            <div class="large-promo__item large-promo__item--monitoring">
                 <div class="container">
                     <div class="large-promo__content">
                         <div class="large-promo__image">
                             <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=250&fit=crop" alt="Dark Web Monitoring"/>
                         </div>
-                        <div class="large-promo__text">
-                            <h3 class="large-promo__title"><a id="dark-web"></a>Dark Web and Social Media Monitoring</h3>
-                            <p class="large-promo__description">Enjoying time online now comes with added peace of mind thanks to Social Media Monitoring and Dark Web Monitoring from Scam Guard.</p>
-                            <p class="large-promo__description">Dark Web Monitoring stops your personal information from getting into the wrong hands. You'll get an alert if there's a data breach and your details end up on the dark web, so you can change your passwords and stay safe.</p>
-                            <p class="large-promo__description">Social Media Monitoring watches out for any suspicious activity on any of your social media accounts - and you'll get alerted immediately if we think they've been compromised.</p>
+                        <div class="large-promo__text monitoring-text">
+                            <h3 class="large-promo__title monitoring-title"><a id="dark-web"></a>Dark Web and Social Media<br>Monitoring</h3>
+                            <p class="large-promo__description monitoring-description">Enjoying time online now comes with<br>added peace of mind thanks to Social<br>Media Monitoring and Dark Web<br>Monitoring from Scam Guard.</p>
+                            <p class="large-promo__description monitoring-description">Dark Web Monitoring stops your personal<br>information from getting into the wrong<br>hands. You’ll get an alert if there’s a data<br>breach and your details end up on the dark<br>web, so you can change your passwords<br>and stay safe.</p>
+                            <p class="large-promo__description monitoring-description">Social Media Monitoring watches out for<br>any suspicious activity on any of your<br>social media accounts - and you’ll get<br>alerted immediately if we think they’ve<br>been compromised.</p>
                         </div>
                     </div>
                 </div>
@@ -210,11 +210,11 @@
         </section>
 
         <!-- FAQ Section -->
-        <section class="faq" id="faq">
-            <div class="container">
-                <h2 class="section-title">More on Scam Guard</h2>
-                
-                <div class="accordion">
+        <section class="faq-section" id="faq">
+            <h2>More on Scam Guard</h2>
+            <div class="faq-divider"></div>
+            
+            <div class="accordion">
                     <!-- FAQ Item 1 -->
                     <div class="accordion-item">
                         <button class="accordion__header" aria-expanded="false">
@@ -275,8 +275,115 @@
                             <p>Scam Guard is a 30-day rolling contract. To cancel Scam Guard, log in to your account, go to the mobile add-ons page, select Scam Guard from your list of current active add-ons and click remove. We'll remove the Scam Guard add-on on your next billing cycle. It can also be cancelled at any time by calling us on 150 or by texting STOP SCAMGUARD to 150. You can cancel via an agent immediately, on your next bill cycle, or on any date in the future. You'll receive a credit for any unused days on your next bill. To add Scam Guard again, text SCAMGUARD to 150.</p>
                         </div>
                     </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="accordion-item">
+                        <button class="accordion__header" aria-expanded="false">
+                            <span class="accordion__icon accordion__icon--closed">+</span>
+                            <span class="accordion__icon accordion__icon--open">−</span>
+                            <span class="accordion__title">Can I still get scammed if I have Scam Guard?</span>
+                        </button>
+                        <div class="accordion__panel">
+                            <p>Scam Guard helps protect you from known scam numbers and suspicious calls, but it cannot guarantee 100% protection. Scammers constantly change their tactics and numbers, so some may still get through. Always remain vigilant and never share personal information with unknown callers.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 7 -->
+                    <div class="accordion-item">
+                        <button class="accordion__header" aria-expanded="false">
+                            <span class="accordion__icon accordion__icon--closed">+</span>
+                            <span class="accordion__icon accordion__icon--open">−</span>
+                            <span class="accordion__title">How will I be notified of suspected spam or fraud calls?</span>
+                        </button>
+                        <div class="accordion__panel">
+                            <p>When a suspected spam or fraud call comes in, your phone will display a warning label on the screen. You'll see information about why the call is flagged, helping you decide whether to answer or ignore it.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 8 -->
+                    <div class="accordion-item">
+                        <button class="accordion__header" aria-expanded="false">
+                            <span class="accordion__icon accordion__icon--closed">+</span>
+                            <span class="accordion__icon accordion__icon--open">−</span>
+                            <span class="accordion__title">Will this feature apply to calls via third-party apps such as WhatsApp, Microsoft Teams etc?</span>
+                        </button>
+                        <div class="accordion__panel">
+                            <p>Scam Guard currently works on standard voice calls made through the EE network. It does not protect calls made through third-party apps like WhatsApp, Microsoft Teams, or other internet-based calling services.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 9 -->
+                    <div class="accordion-item">
+                        <button class="accordion__header" aria-expanded="false">
+                            <span class="accordion__icon accordion__icon--closed">+</span>
+                            <span class="accordion__icon accordion__icon--open">−</span>
+                            <span class="accordion__title">What is the dark web?</span>
+                        </button>
+                        <div class="accordion__panel">
+                            <p>The dark web is a part of the internet that isn't indexed by search engines and requires special software to access. It's often associated with illegal activities, though not all dark web sites are used for illegal purposes. Criminals sometimes use the dark web to buy and sell stolen personal information.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 10 -->
+                    <div class="accordion-item">
+                        <button class="accordion__header" aria-expanded="false">
+                            <span class="accordion__icon accordion__icon--closed">+</span>
+                            <span class="accordion__icon accordion__icon--open">−</span>
+                            <span class="accordion__title">What is Dark Web Monitoring?</span>
+                        </button>
+                        <div class="accordion__panel">
+                            <p>Dark Web Monitoring is a feature that scans the dark web for your personal information, such as email addresses, phone numbers, and other sensitive data. If your information is found, you'll receive an alert so you can take action to protect yourself.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 11 -->
+                    <div class="accordion-item">
+                        <button class="accordion__header" aria-expanded="false">
+                            <span class="accordion__icon accordion__icon--closed">+</span>
+                            <span class="accordion__icon accordion__icon--open">−</span>
+                            <span class="accordion__title">What are the benefits of Dark Web Monitoring?</span>
+                        </button>
+                        <div class="accordion__panel">
+                            <p>Dark Web Monitoring helps you stay informed if your personal information has been compromised. Early detection allows you to take steps to secure your accounts, change passwords, and prevent identity theft before significant damage occurs.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 12 -->
+                    <div class="accordion-item">
+                        <button class="accordion__header" aria-expanded="false">
+                            <span class="accordion__icon accordion__icon--closed">+</span>
+                            <span class="accordion__icon accordion__icon--open">−</span>
+                            <span class="accordion__title">How do I add to or edit my personal information being monitored on the Dark Web?</span>
+                        </button>
+                        <div class="accordion__panel">
+                            <p>You can manage your monitored personal information through the EE Cyber Security app or My Norton portal. Log in with your EE ID to add, remove, or update the information you want monitored on the dark web.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 13 -->
+                    <div class="accordion-item">
+                        <button class="accordion__header" aria-expanded="false">
+                            <span class="accordion__icon accordion__icon--closed">+</span>
+                            <span class="accordion__icon accordion__icon--open">−</span>
+                            <span class="accordion__title">Are text messages protected by Scam Guard?</span>
+                        </button>
+                        <div class="accordion__panel">
+                            <p>Scam Guard primarily focuses on protecting you from scam calls. While it doesn't directly filter text messages, the dark web monitoring feature can help protect your phone number from being used in SMS-based scams.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 14 -->
+                    <div class="accordion-item">
+                        <button class="accordion__header" aria-expanded="false">
+                            <span class="accordion__icon accordion__icon--closed">+</span>
+                            <span class="accordion__icon accordion__icon--open">−</span>
+                            <span class="accordion__title">If I already have Scam Guard, how do I access my new Norton features?</span>
+                        </button>
+                        <div class="accordion__panel">
+                            <p>If you have Scam Guard, you can access your Norton features by downloading the EE Cyber Security app or visiting the My Norton portal. Sign in using your EE ID to access dark web monitoring and other security features included with your subscription.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </section>
     </main>
 
@@ -354,28 +461,26 @@
         <!-- Social Media Section -->
         <div class="footer-social">
             <a href="#" class="footer-social-icon" aria-label="X">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 4L11 12L4 20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M20 4L13 12L20 20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg width="29" height="30" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
             </a>
             <a href="#" class="footer-social-icon" aria-label="LinkedIn">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <rect x="2" y="9" width="4" height="12" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="4" cy="4" r="2" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg width="27" height="27" viewBox="0 0 24 24" fill="#000000" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect x="2" y="9" width="4" height="12"/>
+                    <circle cx="4" cy="4" r="2"/>
                 </svg>
             </a>
             <a href="#" class="footer-social-icon" aria-label="Facebook">
-                <svg width="32" height="32" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M62 0C27.8 0 0 27.8 0 62s27.8 62 62 62 62-27.8 62-62S96.2 0 62 0zm0 118c-30.9 0-56-25.1-56-56S31.1 6 62 6s56 25.1 56 56-25.1 56-56 56z" fill="#000000"/>
-                    <path d="M68 62V46h-8v16H44v8h16v16h8V70h16v-8H68z" fill="#000000"/>
+                <svg width="17" height="27" viewBox="0 0 24 24" fill="#000000" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                 </svg>
             </a>
             <a href="#" class="footer-social-icon" aria-label="YouTube">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#000000"/>
+                <svg width="35" height="24" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="#000000"/>
+                    <polygon points="9.545 15.568 15.818 12 9.545 8.432" fill="#FFFFFF"/>
                 </svg>
             </a>
         </div>
