@@ -126,15 +126,24 @@ a {
     flex: 1;
     min-width: 0;
     margin: 0 24px;
-
-    /* Temporarily show scrollbar for debugging */
-    /* scrollbar-width: none;
-    -ms-overflow-style: none; */
 }
 
-/* .category-viewport::-webkit-scrollbar {
-    display: none;
-} */
+.category-viewport::-webkit-scrollbar {
+    height: 4px;
+}
+
+.category-viewport::-webkit-scrollbar-track {
+    background: #FFFFFF;
+}
+
+.category-viewport::-webkit-scrollbar-thumb {
+    background: #007F8C;
+    border-radius: 2px;
+}
+
+.category-viewport::-webkit-scrollbar-thumb:hover {
+    background: #006B75;
+}
 
 .category-list {
     display: flex;
@@ -144,11 +153,13 @@ a {
 
 .category {
     display: inline-block;
-    font-size: 21px;
+    font-size: 18px;
     color: #111111;
-    font-weight: 400;
     padding: 0 16px;
+    cursor: pointer;
     position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .category.active {
