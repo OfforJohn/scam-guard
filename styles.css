@@ -305,8 +305,10 @@ a {
 .icon-link {
     color: #007B85;
     font-weight: 600;
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .icon-link:hover {
