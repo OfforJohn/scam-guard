@@ -543,6 +543,26 @@ a {
     padding: 20px;
 }
 
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 /* Footer Social */
 .footer-social {
     display: flex;
